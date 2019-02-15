@@ -1,5 +1,4 @@
-# Created by https://www.gitignore.io/api/nikola,python
-# Edit at https://www.gitignore.io/?templates=nikola,python
+/.doit.db.*
 
 ### Nikola ###
 # gitignore template for Nikola static site generator

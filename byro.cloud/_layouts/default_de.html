@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    {% include head.html %}
+</head>
+<body>
+<header>
+    <nav id="site-navigation">
+            <ul id="menu-main">
+                {% assign current_page = nil %}
+                {% for link in site.navigation %}
+                    {% assign current = '' %}
+                    {% if page.url == "/" and (link.url == "/index.html" or link.url == "/index.de.html") %}
+                        {% assign current = 'current' %}
+                        {% assign current_page = link %}
+                    {% endif %}
+                    {% if page.url contains link.url %}
+                        {% assign current = 'current' %}
+                        {% assign current_page = link %}
+                    {% endif %}
+                    <li class="menu-item {{ current }}">
+                        <a href="{% if link.url contains "://" %}{{ link.url }}{% else %}{{ link.url | prepend: site.baseurl }}.de.html{% endif %}"
+                            {% if link.url contains "://" %}target="_blank"{% endif %}>
+                            {{ link.title_de }}
+                        </a>
+                    </li>
+                {% endfor %}
+                <li class="menu-item language">
+                    <span class="language language-active">DE</span> /
+                    <a href="{% if current_page %}{{ current_page.url | prepend: site.baseurl }}.html{% else %}/{% endif %}" class="language">EN</a>
+                </li>
+            </ul>
+    </nav>
+    {% if page.url == "/" or page.url == "/index.de.html" %}<div id="header-img"></div>{% endif %}
+</header>
+<div class="container">
+    {{ content }}
+</div>
+<footer>
+    <nav>
+        <ul id="menu-main">
+            <li class="menu-item">byro</li>
+            <li class="menu-item"><a href="/impressum.html">Impressum</a> </li>
+            <li class="menu-item"><a href="https://github.com/byro" target="_blank">byro</a> </li>
+            <li class="menu-item"><a href="https://twitter.com/byrocloud" target="_blank">Twitter</a> </li>
+        </ul>
+    </nav>
+</footer>
+</body>
+</html>

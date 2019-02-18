@@ -1,0 +1,10 @@
+## -*- coding: utf-8 -*-
+<%inherit file="page.tmpl"/>
+
+<%block name="content">
+<article class="storypage" itemscope="itemscope" itemtype="http://schema.org/Article">
+    <div itemprop="articleBody text">
+    ${post.text()}
+    </div>
+</article>
+</%block>

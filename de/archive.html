@@ -9,8 +9,8 @@
 <link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS (de)" href="rss.xml">
-<link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS (de)" hreflang="de" href="rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS (en)" hreflang="en" href="../rss.xml">
 <link rel="canonical" href="https://byro.cloud/de/archive.html">
 <!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><link rel="alternate" hreflang="en" href="../archive.html">
 </head>
@@ -20,10 +20,11 @@
 <!-- Menubar -->
 
 <nav class="navbar navbar-expand-md static-top mb-4
-navbar-dark bg-dark
+navbar-dark
+bg-dark
 "><div class="container">
 <!-- This keeps the margins nice -->
-        <a class="navbar-brand" href="https://byro.cloud/de/">
+        <a class="navbar-brand" href=".">
             <img src="../images/byro.svg" alt="byro" id="logo" class="d-inline-block align-top"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -34,7 +35,7 @@ navbar-dark bg-dark
 <ul class="navbar-nav navbar-right">
 <li>
             </li>
-<li class="nav-item"><a href="https://byro.cloud/" rel="alternate" hreflang="en" class="nav-link">English</a></li>
+<li class="nav-item"><a href="../" rel="alternate" hreflang="en" class="nav-link">English</a></li>
 
                 
                     
@@ -49,6 +50,7 @@ navbar-dark bg-dark
         <!--Body content-->
         
         
+        
 <article class="listpage"><header><h1>Archiv</h1>
     </header><div class="translationslist translations">
             <h3 class="translationslist-intro">Auch verfügbar in:</h3>
@@ -61,20 +63,16 @@ navbar-dark bg-dark
 </article><!--End of body content--><footer id="footer">
             Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>
             
+            
         </footer>
 </div>
 </div>
 
 
-        <script src="../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
-    moment.locale("de");
-    fancydates(0, "YYYY-MM-DD HH:mm");
-    </script><!-- end fancy dates --><script>
+        <script src="../assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

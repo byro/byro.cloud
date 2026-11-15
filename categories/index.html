@@ -9,8 +9,8 @@
 <link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS (de)" href="../de/rss.xml">
-<link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS (en)" hreflang="en" href="../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS (de)" hreflang="de" href="../de/rss.xml">
 <link rel="canonical" href="https://byro.cloud/categories/">
 <!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]-->
 </head>
@@ -20,10 +20,11 @@
 <!-- Menubar -->
 
 <nav class="navbar navbar-expand-md static-top mb-4
-navbar-dark bg-dark
+navbar-dark
+bg-dark
 "><div class="container">
 <!-- This keeps the margins nice -->
-        <a class="navbar-brand" href="https://byro.cloud/">
+        <a class="navbar-brand" href="../">
             <img src="../images/byro.svg" alt="byro" id="logo" class="d-inline-block align-top"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -52,7 +53,7 @@ navbar-dark bg-dark
 <ul class="navbar-nav navbar-right">
 <li>
             </li>
-<li class="nav-item"><a href="https://byro.cloud/de/" rel="alternate" hreflang="de" class="nav-link">Deutsch</a></li>
+<li class="nav-item"><a href="../de/" rel="alternate" hreflang="de" class="nav-link">Deutsch</a></li>
 
                 
                     
@@ -67,6 +68,7 @@ navbar-dark bg-dark
         <!--Body content-->
         
         
+        
 <h1>Tags</h1>
 
         <!--End of body content-->
@@ -74,20 +76,16 @@ navbar-dark bg-dark
         <footer id="footer">
             Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>
             
+            
         </footer>
 </div>
 </div>
 
 
-        <script src="../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
-    moment.locale("en");
-    fancydates(0, "YYYY-MM-DD HH:mm");
-    </script><!-- end fancy dates --><script>
+        <script src="../assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

@@ -17,5 +17,5 @@ This shall show a fancy table of features
 
 .. _quickstart:
 
-A short quickstart intro.
+A short quickstart intro!
 

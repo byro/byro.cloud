@@ -2,6 +2,8 @@
 
 Source of https://byro.cloud, built with [Nikola](https://getnikola.com/).
 
+byro.cloud only redirects to the new website https://byro.info/.
+
 - `master`: site sources (this branch) – edit here
 - `gh-pages`: generated HTML, served by GitHub Pages – never edit by hand
 
@@ -14,7 +16,7 @@ pip install -r requirements.txt
 
 ## Edit & preview
 
-Content lives in `pages/` (e.g. `pages/index.rst`), the theme in `themes/byro_theme/`.
+The redirect page is `files/index.html`, the redirect for `/de/` is `REDIRECTIONS` in `conf.py`.
 
 ```bash
 nikola auto    # live preview at http://127.0.0.1:8000
@@ -28,4 +30,4 @@ Commit and push your changes to `master` first, then:
 nikola github_deploy
 ```
 
-This builds the site and force-pushes `output/` to `gh-pages`.
+This builds the site and pushes `output/` to `gh-pages`.
